@@ -1,0 +1,74 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+{% include head.html %}
+</head>
+
+<body id="page">
+
+{% include navigation.html %}
+
+<div id="main" role="main">
+  <article class="hentry">
+    {% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a>{% endif %}{% endif %}
+    <div class="entry-wrapper">
+
+      <div class="entry-content">
+
+		<!-- 
+		<div class="aboutwrap">
+			<img src="{{ site.url }}/images/bio-photo.jpg" alt="{{ page.author.name }} photo" class="about-photo" />
+			<div class="aboutdesc">
+               <div id="abtsumm">Steven<br/>Soojin<br/>Kim</div>
+			</div>
+		</div> 
+		-->
+
+
+        {{ content }}
+
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+
+
+		<div class="social-wrap">
+			<p id="connecttext">Connect with me:</p>
+			<div class="social-icons">
+			<a href="https://goo.gl/maps/fr9sRe6534Q2" title="NYC" target="_blank" id="foot-address"><i class="icon-map-marker icon-2x"></i></a>
+			{% if site.owner.linkedin %}<a href="http://linkedin.com/in/{{ site.owner.linkedin }}" title="{{ site.owner.name}} on LinkedIn" target="_blank"><i class="icon-linkedin icon-2x"></i></a>{% endif %}
+            {% if site.owner.github %}<a href="http://github.com/{{ site.owner.github }}" title="{{ site.owner.name}} on Github" target="_blank"><i class="icon-github icon-2x"></i></a>{% endif %}
+			{% if site.owner.facebook %}<a href="http://facebook.com/{{ site.owner.facebook }}" title="{{ site.owner.name}} on Facebook" target="_blank"><i class="icon-facebook icon-2x"></i></a>{% endif %}
+			{% if site.owner.instagram %}<a href="http://instagram.com/{{ site.owner.instagram }}" title="{{ site.owner.name}} on Instagram" target="_blank"><i class="icon-instagram icon-2x"></i></a>{% endif %}
+			{% if site.owner.lastfm %}<a href="http://www.last.fm/user/{{ site.owner.lastfm }}" title="{{ site.owner.name}} on last.fm" target="_blank"><i class="icon-lastfm icon-2x"></i></a>{% endif %}
+			{% if site.owner.tripadvisor %}<a href="http://www.tripadvisor.com/members/{{ site.owner.tripadvisor }}" title="{{ site.owner.name}} on Tripadvisor" target="_blank"><i class="icon-tripadvisor icon-2x"></i></a>{% endif %}
+			{% if site.owner.goodreads %}<a href="https://www.goodreads.com/user/show/{{ site.owner.goodreads }}" title="{{ site.owner.name}} on Goodreads" target="_blank"> <i class="icon-book icon-2x"></i></a>{% endif %}
+			{% if site.owner.fitocracy %}<a href="http://www.fitocracy.com/profile/{{ site.owner.fitocracy }}" title="{{ site.owner.name}} on Fitocracy" target="_blank"><i class="icon-barbell icon-2x"></i></a>{% endif %}
+
+			{% if site.owner.google_plus %}<a href="{{ site.owner.google_plus }}" title="{{ site.owner.name}} on Google+" target="_blank"><i class="icon-google-plus icon-2x"></i></a>{% endif %}
+			{% if site.owner.stackexchange %}<a href="{{ site.owner.stackexchange }}" title="{{ site.owner.name}} on StackExchange" target="_blank"><i class="icon-stackexchange icon-2x"></i></a>{% endif %}
+			{% if site.owner.flickr %}<a href="http://www.flickr.com/photos/{{ site.owner.flickr }}" title="{{ site.owner.name}} on Flickr" target="_blank"><i class="icon-flickr icon-2x"></i></a>{% endif %}
+			{% if site.owner.tumblr %}<a href="http://{{ site.owner.tumblr }}.tumblr.com" title="{{ site.owner.name}} on Tumblr" target="_blank"><i class="icon-tumblr icon-2x"></i></a>{% endif %}
+			{% if site.owner.twitter %}<a href="http://twitter.com/{{ site.owner.twitter }}" title="{{ site.owner.name}} on Twitter" target="_blank"><i class="icon-twitter icon-2x"></i></a>{% endif %}
+			</div>
+		</div>
+
+  </article>
+</div><!-- /#main -->
+
+
+{% include scripts.html %}
+{% include preload.html %}
+
+<div class="footer-wrapper">
+  <footer role="contentinfo">
+    {% include footer.html %}
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+
+
+</body>
+</html>

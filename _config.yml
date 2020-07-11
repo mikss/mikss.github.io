@@ -1,0 +1,68 @@
+title:            Steven Soojin Kim
+description:      Applied Mathematician
+logo:
+# url:              //localhost:4000
+# url:              http://mikss.github.io
+url:              https://stevensoojin.kim
+
+# Owner/author information
+owner:
+  name:           Steven Soojin Kim
+  avatar:
+  email:          ssk@stevensoojin.kim
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:
+  facebook:
+  goodreads:
+  lastfm:
+  github:
+  stackexchange:
+  linkedin:       mikss
+  instagram:
+  flickr:
+  tumblr:
+  fitocracy:
+  tripadvisor:
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:
+
+# Analytics and webmaster tools stuff goes here
+google_analytics: UA-52973798-1
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: About
+    url: /about/
+  - title: Blog
+    url: /blog/
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+future:      true
+#pygments:    true
+highlighter: rouge
+markdown:    kramdown
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+  syntax_highlighter_opts:
+    line_numbers:
+    line_numbers_start: 1
+    tab_width: 4
+    bold_every: 10
+    css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Gemfile", "Capfile", "README.md", "LICENSE", "Gemfile.lock", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
