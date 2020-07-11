@@ -1,0 +1,106 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?74i6p');
+	src:url('fonts/icomoon.eot?#iefix74i6p') format('embedded-opentype'),
+		url('fonts/icomoon.woff?74i6p') format('woff'),
+		url('fonts/icomoon.ttf?74i6p') format('truetype'),
+		url('fonts/icomoon.svg?74i6p#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-book:before {
+	content: "\e603";
+}
+.icon-bullseye:before {
+	content: "\f140";
+}
+.icon-send-o:before {
+	content: "\f1d9";
+}
+.icon-tripadvisor:before {
+	content: "\33";
+}
+.icon-barbell:before {
+	content: "\e602";
+}
+.icon-map-marker:before {
+	content: "\f041";
+}
+.icon-envelope-o:before {
+	content: "\f003";
+}
+.icon-facebook:before {
+	content: "\f09a";
+}
+.icon-lastfm:before {
+	content: "\e601";
+}
+.icon-goodreads:before {
+	content: "\e600";
+}
+.icon-tags:before {
+	content: "\f02c";
+}
+.icon-pencil:before {
+	content: "\f040";
+}
+.icon-twitter-square:before {
+	content: "\f081";
+}
+.icon-facebook-square:before {
+	content: "\f082";
+}
+.icon-twitter:before {
+	content: "\f099";
+}
+.icon-github:before {
+	content: "\f09b";
+}
+.icon-rss:before {
+	content: "\f09e";
+}
+.icon-chain:before {
+	content: "\f0c1";
+}
+.icon-google-plus-square:before {
+	content: "\f0d4";
+}
+.icon-google-plus:before {
+	content: "\f0d5";
+}
+.icon-linkedin:before {
+	content: "\f0e1";
+}
+.icon-comment-o:before {
+	content: "\f0e5";
+}
+.icon-calendar-o:before {
+	content: "\f133";
+}
+.icon-stack-overflow:before {
+	content: "\f16c";
+}
+.icon-instagram:before {
+	content: "\f16d";
+}
+.icon-flickr:before {
+	content: "\f16e";
+}
+.icon-tumblr:before {
+	content: "\f173";
+}
