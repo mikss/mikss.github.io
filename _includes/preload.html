@@ -1,0 +1,87 @@
+<div id="homepre" class="preload"></div>
+<div id="aboutpre" class="preload"></div>
+
+<div id="blogpre" class="preload">
+  <article class="entry">
+    <div class="entry-wrapper">
+      <div class="entry-content entry-narrow">
+
+		{% include blogtemp.html %}   
+
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+  </article>
+</div><!-- /#blogpre -->
+
+
+<script>
+// preloads
+$(function() {
+	
+	$( "#homepre" ).load( "/index.html #main" );
+	$( "#aboutpre" ).load( "/about/index.html #main" );
+	
+	{% if page.title == "Blog" %}
+		$("#main").hide();
+		$("#blogpre").show();
+	{% endif %}
+	
+});
+
+
+// THIS IS WHERE THE MAGIC HAPPENS
+$(function() {
+	$('.navia').click(function(e) {
+		href = $(this).attr("href");
+		ID =  $(this).attr("id");
+		id = ID.toLowerCase();
+		
+		loadContent(href,id);
+		
+		// HISTORY.PUSHSTATE
+		history.pushState('', ID, href);
+		e.preventDefault();
+		
+	});
+	
+	// THIS EVENT MAKES SURE THAT THE BACK/FORWARD BUTTONS WORK AS WELL
+	window.onpopstate = function(event) {
+		console.log("pathname: "+location.pathname);
+		var url = location.pathname;
+		var trunc = url.slice(0,-1);
+		var last = trunc.lastIndexOf('/');
+		var id = trunc.slice(last + 1);
+		
+		if (!id.trim()) {
+			id = 'home';
+		}
+
+		loadContent(url, id);
+	};
+
+});
+
+function loadContent(url,id){
+	// USES JQUERY TO LOAD THE CONTENT
+	$( '#main' ).hide();
+	$( '.preload' ).hide();
+	$( '#'+id+'pre' ).show();
+		
+	// THESE TWO LINES JUST MAKE SURE THAT THE NAV BAR REFLECTS THE CURRENT URL
+	$('a').removeClass('current');
+	$("a[href*='" + url + "']").addClass("current");
+	if(id == 'home') {
+		$('a').removeClass('current');
+	}
+}
+
+<!-- Highlight Current -->
+$(function() { 
+	
+	{% if page.title == 'Home' %}
+	{% else %}
+		$("a[href*='" + location.pathname + "']").addClass("current");
+	{% endif %}
+});
+		
+</script>

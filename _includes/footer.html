@@ -1,0 +1,5 @@
+<div id="foot-contact">
+	{% if site.owner.email %}<a href="mailto:{{ site.owner.email }}" title="e-mail {{ site.owner.email}}" id="foot-email">{{ site.owner.email }}</a>{% endif %}
+</div>
+<span>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</span>
+<!-- /.footer -->
