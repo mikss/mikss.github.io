@@ -2,9 +2,9 @@ title:            Steven Soojin Kim
 description:      Applied Mathematician
 logo:             site-logo.png
 disqus_shortname: sskim
-# url:             //localhost:4000
-# url:              http://stevensoojin.kim
-url: http://mikss.github.io
+# url:              //localhost:4000
+# url:              http://mikss.github.io
+url:              http://stevensoojin.kim
 
 # Owner/author information
 owner:
