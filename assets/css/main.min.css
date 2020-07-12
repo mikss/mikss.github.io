@@ -3840,7 +3840,7 @@ body {
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 300;
-    vertical-align: middle
+    /* vertical-align: middle */
 }
 
 #page-title a {
