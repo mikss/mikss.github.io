@@ -432,7 +432,9 @@ pre {
 }
 
 .entry-blog {
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400
 }
 
 .highlight {
@@ -3836,6 +3838,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     font-size: 1.5rem;
+    font-style: normal;
     font-weight: 300;
     vertical-align: middle
 }
