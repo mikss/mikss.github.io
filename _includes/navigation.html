@@ -8,8 +8,6 @@
 				<li>
 					{% if link.external %}
 						<a href="{{ link.url }}">{{ link.title }}</a>
-					{% elsif link.title == "Teaching" %}
-						<a id="{{ link.title }}" class="navia" href="{{ site.url }}{{ link.url }}">teaching+</a>
 					{% else %}
 						<a id="{{ link.title }}" class="navia" href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
 					{% endif %} 
