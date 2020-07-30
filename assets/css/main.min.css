@@ -4520,17 +4520,36 @@ span+.entry-title {
     font-weight: 600
 }
 
+#portfolio .port-simple {
+    font-size: 14px;
+    font-weight: 400;
+    font-size: .875rem;
+    color: #848484;
+}
+
+#portfolio .port-simple a {
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s
+}
+
+#portfolio .port-simple:hover {
+    color: #05a
+}
+
 @media all and (min-width:760px) {
     .container .mix,
     .container .gap {
-        width: 49.5%
+        width: 100%
     }
 }
 
 @media all and (min-width:1060px) {
     .container .mix,
     .container .gap {
-        width: 33%
+        width: 100%
     }
 }
 

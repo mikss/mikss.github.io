@@ -14,44 +14,15 @@
 	{% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
 	<li class="filter" data-filter="{{ this_word }}">{{ this_word }}<span>{{ site.tags[this_word].size }}</span></li>
   {% endunless %}{% endfor %}
-</ul><!-- @end #filter-list -->
-
-
- 
+</ul><!-- @end #filter-list --> 
  
 <div id="portfolio" class="container">
 	{% for post in site.posts %} 
-
-	<div class="mix {% for tag in post.tags %}{{ tag }} {% endfor %}" title="{{ post.title }}">  
-		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-			<div class="flipper"> 
-				<div class="front">
-					<img src="/images/{{ post.image }}"  alt="{{ post.title }}">
-<!-- 
-					<div class="port-title"> {{ post.title }} </div>
- -->
-				</div>
-				
-				<a style="display:block" href="{{ site.url }}{{ post.url }}">
-				<div class="back">
-					<div class="port-summary">
-						<p class="port-title"> {{ post.title }}  </p>
-						<p class="port-date">{{ post.date | date: "%-d %b %Y" }}</p>
-						<p class="port-desc">{{ post.description }}</p>
-
-					</div>
-
-<!-- 
-					<div class="port-loc">
-						<p class="port-target">  <a href="{{ site.url }}{{ post.url }}"><i class="icon-bullseye icon-2x"></i></a> </p>
-					</div>
- -->
-				</div>
-				</a>
-			</div>
+		<div class="mix {% for tag in post.tags %}{{ tag }} {% endfor %}" title="{{ post.title }}">  
+			<a style="display:block" href="{{ site.url }}{{ post.url }}">
+				<p class="port-simple">{{ post.date | date: "%d %b %Y" }}: <b>{{ post.title }}</b>. {{ post.description }}</p>
+			</a>
 		</div>
-		::after 
-	</div>
 	{% endfor %}
 	<div class="gap"></div>
 	<div class="gap"></div>
