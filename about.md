@@ -58,7 +58,7 @@ During my Ph.D., I did research on applied probability, rare events, and connect
    [`arXiv:1508.04402`](http://arxiv.org/abs/1508.04402), [`doi:10.1007/978-3-319-34139-2_11`](http://doi.org/10.1007/978-3-319-34139-2_11)
 
 1. *Problems at the Interface of Probability and Convex Geometry: Random Projections and Constrained Processes*
-   [Ph.D. Thesis](https://repository.library.brown.edu/studio/collections/dissertation/), May 2017.
+   [Ph.D. Thesis](https://repository.library.brown.edu/studio/item/bdr:733380/), May 2017.
 {: reversed="reversed"}
 
 [comm]: Large deviations on the Stiefel manifold [`arXiv:????.?????`](http://arxiv.org)
